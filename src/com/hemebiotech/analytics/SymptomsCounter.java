@@ -16,7 +16,7 @@ public class SymptomsCounter implements ISymptomsCounter{
 		Map<String, Integer> mSymptom = new TreeMap<>();
 	
 		for ( String symptom : lSymptom ) {
-			
+			symptom = symptom.trim().toLowerCase();
 			if( mSymptom.containsKey(symptom) ) {
 				
 				int nbOccur = mSymptom.get(symptom);
